@@ -36,7 +36,7 @@ class UserController extends Controller{
 
         //$listeUser = $this->getDoctrine()->getRepository('User')->listAll();
 
-        $listeUser = [[new User(1,'Lefevre','Antoine','antoine.lefevre.isn@gmail.com','AntoineLefevre','Mogami#2889')],[new User(2,'Durand','Nael','antoine.lefevre.isn@gmail.com','AntoineLefevre','Mogami#2889')]];
+        $listeUser = [new User(1,'Lefevre','Antoine','antoine.lefevre.isn@gmail.com','AntoineLefevre','Mogami#2889'),new User(2,'Durand','Nael','antoine.lefevre.isn@gmail.com','AntoineLefevre','Mogami#2889')];
         return $this->render(
             'accueil/hello.html.twig',array('Liste'=>$listeUser)
         );

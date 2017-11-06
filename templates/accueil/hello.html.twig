@@ -2,4 +2,11 @@
 
 {% block title %}Hello!{% endblock %}
 
-{% block body %}Hello{% endblock %}
+{% block body %}
+    {% for unUser in Liste %}
+    <p>{{ unUser.nom }} {{ unUser.prenom }} {{ unUser.email }} {{ unUser.github }} {{ unUser.discord }}</p>
+    {% endfor %}
+{% endblock %}
+
+
+
